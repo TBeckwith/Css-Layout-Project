@@ -1,0 +1,275 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  border-left: solid 5px #3acec2;
+}
+
+div {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.logo {
+  border-radius: 100%;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+body {
+  margin-top: 60px;
+}
+
+.main-header {
+  top: 0;
+  position:fixed;
+  background-color: #FFF;
+  display:block;
+  width: 100%;
+  box-shadow: 3px 5px 10px;
+}
+
+.main-nav {
+  float: right;
+  display: block;
+  width: 100%;
+}
+
+.main-nav li {
+  float: right;
+  display:block;
+  padding: 5px;
+  background-color: rgba(8, 8, 8, 0.1);
+  border-radius: 15px;
+  margin-bottom: 10px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  width: 95%;
+  text-align: center;
+  box-shadow: 2px 3px 10px;
+}
+
+
+.name {
+	font-size: 1.25em;
+  margin: 12px;
+  clear: both;
+  display:inline-block;
+}
+
+.name a,
+.main-nav a {
+	text-align: center;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+.headline {
+  text-align: center;
+}
+
+.tagline {
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+
+
+
+/* ---- Layout Containers ---- */
+
+.container {
+  display: block;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.banner {
+	color: #fff;
+	background-color: #3acec3;
+  background-repeat:no-repeat;
+  padding-top: 10px;
+}
+
+.main-footer {
+  text-align: center;
+  clear: both;
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+  display:block;
+	width: 190px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+ .banner {
+    background-image: url(/img/2013_Seattle_Skyline.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+@media only screen and (min-width: 900px) {
+
+  /* ---- Header ---- */
+  
+  .main-header {
+    top: 0;
+    left: 0;
+    position:fixed;
+    background-color: #FFF;
+    display:block;
+    width: 100%;
+    box-shadow: 3px 5px 10px;
+  }
+  
+  
+  /* ---- Nav ---- */
+    
+  .main-nav {
+    display: block;
+    float: right;
+    width: 70%;
+  }
+  
+  .main-nav li {
+    display:inline-block;
+    padding: 7.5px;
+    background-color: rgba(8, 8, 8, 0.1);
+    border-radius: 15px;
+    margin: 10px;
+    width: 120px;
+    text-align: center;
+  }
+  
+  /* ---- Main Layout ---- */
+  
+  div {
+    
+  }
+
+  .col {
+    margin: 0;
+    width: 33%;
+    display:block;
+    float: left;
+    
+  }
+  
+  .col p {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: inline-block;
+  }
+  
+  footer {
+    margin-top: 565px;
+    display: block;
+  }
+    
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+
+@media only screen and (max-width: 900px) {
+  .banner .main-header {
+    width: 100%;
+    margin: 0 0 0 -5px;
+  }
+  .main-nav li{
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: inset 3px 3px 5px grey;
+  }
+  
+  .main-nav {
+    
+  }
+  
+  body {
+    border: 0;
+    margin-top: 196px;
+  }
+  
+   .banner {
+    background-image: url(/img/2013_Seattle_Skyline.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
