@@ -158,7 +158,7 @@ body {
 }
 
  .banner {
-    background-image: url(/img/2013_Seattle_Skyline.jpg);
+    background-image: url(../img/2013_Seattle_Skyline.jpg);
     background-size: 100%;
     background-position: center;
 }
@@ -259,7 +259,7 @@ body {
   }
   
    .banner {
-    background-image: url(/img/2013_Seattle_Skyline.jpg);
+    background-image: url(../img/2013_Seattle_Skyline.jpg);
     background-size: cover;
     background-position: center;
 }
